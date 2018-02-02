@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% import 'macro.html' as macros %}
+<ul>
+    {% for comment in comments %}
+        {{ macros.render_comment(comment) }}
+    {% endfor %}
+</ul>
+</body>
+</html>
